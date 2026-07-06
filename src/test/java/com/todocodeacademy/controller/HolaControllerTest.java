@@ -18,7 +18,7 @@ class HolaControllerTest {
     void deberiaResponderHolaMundo() throws Exception {
         mvc.perform(get("/hola"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hola Mundo"));
+                .andExpect(content().string("Hola Mundo. Prueba"));
     }
 
 }
